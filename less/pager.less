@@ -4,40 +4,37 @@
 
 
 .pager {
-  margin: @baseLineHeight 0;
-  list-style: none;
-  text-align: center;
-  .clearfix();
+	margin: @baseLineHeight 0;
+	list-style: none;
+	text-align: right;
+	.clearfix();
 }
 .pager li {
-  display: inline;
+	display: inline; font-size: 12px; font-family: arial;
 }
 .pager li > a,
 .pager li > span {
-  display: inline-block;
-  padding: 5px 14px;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  .border-radius(15px);
+	display: inline-block;
+	color: #625E51 !important; padding: 4px 6px 2px 6px; margin-left: 1px; background-color: #F0EEE7; border: 1px solid #F0EEE7; text-decoration: none;
 }
 .pager li > a:hover,
 .pager li > a:focus {
-  text-decoration: none;
-  background-color: #f5f5f5;
+	text-decoration: none;
+	border-color: #000
 }
-.pager .next > a,
-.pager .next > span {
-  float: right;
-}
-.pager .previous > a,
-.pager .previous > span {
-  float: left;
-}
+//.pager .next > a,
+//.pager .next > span {
+//	float: right;
+//}
+//.pager .previous > a,
+//.pager .previous > span {
+//	float: left;
+//}
 .pager .disabled > a,
 .pager .disabled > a:hover,
 .pager .disabled > a:focus,
 .pager .disabled > span {
-  color: @grayLight;
-  background-color: #fff;
-  cursor: default;
+	color: @grayLight;
+	background-color: #fff;
+	cursor: default;
 }
