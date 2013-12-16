@@ -7,7 +7,7 @@
 // --------------------------------------------------
 
 // Core
-.btn {
+.btn, .btn-submit {
   display: inline-block;
   .ie7-inline-block();
   padding: 4px 12px;
@@ -17,7 +17,7 @@
   text-align: center;
   vertical-align: middle;
   cursor: pointer;
-  .buttonBackground(@btnBackground, @btnBackgroundHighlight, @grayDark, 0 1px 1px rgba(255,255,255,.75));
+//  .buttonBackground(@btnBackground, @btnBackgroundHighlight, @grayDark, 0 1px 1px rgba(255,255,255,.75));
   border: 1px solid @btnBorder;
   *border: 0; // Remove the border to prevent IE7's black border on input:focus
   border-bottom-color: darken(@btnBorder, 10%);
@@ -59,6 +59,10 @@
     .box-shadow(none);
   }
 
+}
+
+.btn {
+	.buttonBackground(@btnBackground, @btnBackgroundHighlight, @grayDark, 0 1px 1px rgba(255,255,255,.75));
 }
 
 
@@ -142,7 +146,7 @@ input[type="button"] {
 
 // Set the backgrounds
 // -------------------------
-.btn-primary {
+.btn-primary, .btn-submit {
   .buttonBackground(@btnPrimaryBackground, @btnPrimaryBackgroundHighlight);
 }
 // Warning appears are orange
