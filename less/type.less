@@ -60,7 +60,7 @@ h1, h2, h3, h4, h5, h6 {
 	margin: (@baseLineHeight / 2) 0;
 	font-family: @headingsFontFamily;
 	font-weight: @headingsFontWeight;
-	line-height: @baseLineHeight;
+	line-height: 1.1;
 	color: @headingsColor;
 	text-rendering: optimizelegibility; // Fix the character spacing for headings
 	small {
@@ -70,9 +70,9 @@ h1, h2, h3, h4, h5, h6 {
 	}
 }
 
-h1,
-h2,
-h3 { line-height: @baseLineHeight * 2; }
+//h1,
+//h2,
+//h3 { line-height: @baseLineHeight * 2; }
 
 h1 { font-size: @baseFontSize * 2.75; } // ~38px
 h2 { font-size: @baseFontSize * 2.25; } // ~32px
