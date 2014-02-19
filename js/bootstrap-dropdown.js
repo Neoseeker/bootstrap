@@ -54,7 +54,7 @@
       if (!isActive) {
         if ('ontouchstart' in document.documentElement) {
           // if mobile we we use a backdrop because click events don't delegate
-          $('<div class="dropdown-backdrop"/>').insertBefore($(this)).on('click', clearMenus)
+          $('<div class="dropdown-backdrop"/>').insertAfter($(this)).on('click', clearMenus)
         }
         $parent.toggleClass('open')
       }
@@ -107,7 +107,10 @@
 
   }
 
-  function clearMenus() {
+  function clearMenus(e) {
+	if (e != undefined && ($(e.target).is('.dropdown-submenu') || $(e.target).parents().hasClass('dropdown-submenu'))) {
+		return;
+	}
     $('.dropdown-backdrop').remove()
     $(toggle).each(function () {
       getParent($(this)).removeClass('open')
