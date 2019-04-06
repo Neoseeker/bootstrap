@@ -190,18 +190,29 @@ table {
 // -----------------
 // Exact selectors below required to override .table-striped
 
-.table tbody tr {
-  &.success > td {
-    background-color: @successBackground;
+table tr {
+  &.success {
+    > th, > td {
+      background-color: @successBackground !important;
+    }
   }
-  &.error > td {
-    background-color: @errorBackground;
+
+  &.error {
+    > th, > td {
+      background-color: @errorBackground !important;
+    }
   }
-  &.warning > td {
-    background-color: @warningBackground;
+
+  &.warning {
+    > th, > td {
+      background-color: @warningBackground !important;
+    }
   }
-  &.info > td {
-    background-color: @infoBackground;
+
+  &.info {
+    > th, > td {
+      background-color: @infoBackground !important;
+    }
   }
 }
 
