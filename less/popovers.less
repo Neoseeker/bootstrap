@@ -13,10 +13,7 @@
   padding: 1px;
   text-align: left; // Reset given new insertion method
   background-color: @popoverBackground;
-  -webkit-background-clip: padding-box;
-     -moz-background-clip: padding;
-          background-clip: padding-box;
-  border: 1px solid #ccc;
+  background-clip: padding-box;
   border: 1px solid rgba(0,0,0,.2);
   .border-radius(6px);
   .box-shadow(0 5px 10px rgba(0,0,0,.2));
@@ -76,7 +73,6 @@
     left: 50%;
     margin-left: -@popoverArrowOuterWidth;
     border-bottom-width: 0;
-    border-top-color: #999; // IE8 fallback
     border-top-color: @popoverArrowOuterColor;
     bottom: -@popoverArrowOuterWidth;
     &:after {
@@ -91,7 +87,6 @@
     left: -@popoverArrowOuterWidth;
     margin-top: -@popoverArrowOuterWidth;
     border-left-width: 0;
-    border-right-color: #999; // IE8 fallback
     border-right-color: @popoverArrowOuterColor;
     &:after {
       left: 1px;
@@ -104,7 +99,6 @@
     left: 50%;
     margin-left: -@popoverArrowOuterWidth;
     border-top-width: 0;
-    border-bottom-color: #999; // IE8 fallback
     border-bottom-color: @popoverArrowOuterColor;
     top: -@popoverArrowOuterWidth;
     &:after {
@@ -120,7 +114,6 @@
     right: -@popoverArrowOuterWidth;
     margin-top: -@popoverArrowOuterWidth;
     border-right-width: 0;
-    border-left-color: #999; // IE8 fallback
     border-left-color: @popoverArrowOuterColor;
     &:after {
       right: 1px;
