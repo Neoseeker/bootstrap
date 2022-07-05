@@ -632,3 +632,12 @@
 
   }
 }
+
+// MY HACK - fix added for less 4.1.3
+#grid {
+  .core  {
+    .span(@gridColumns) {
+      width: (@gridColumnWidth * @gridColumns) + (@gridGutterWidth * (@gridColumns - 1));
+    }
+  }
+};
