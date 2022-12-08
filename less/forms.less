@@ -199,7 +199,7 @@ input[type="hidden"] {
 	// Float the labels left
 	.control-label {
 		float: left;
-		width: @horizontalComponentOffset - 20;
+		width: (@horizontalComponentOffset - 20);
 		padding-top: 5px;
 		text-align: right;
 	}
@@ -227,7 +227,7 @@ input[type="hidden"] {
 	.input-prepend,
 	.input-append {
 		+ .help-block {
-			margin-top: @baseLineHeight / 2;
+			margin-top: (@baseLineHeight / 2);
 		}
 	}
 	// Move over buttons in .form-actions to align with .controls
